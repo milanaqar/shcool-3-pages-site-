@@ -80,6 +80,7 @@ button
   min-height: 300px;
   font-size: 20px;
   line-height: 1.6;
+  padding: 60px;
 }
 footer 
 {
@@ -109,24 +110,106 @@ footer
 /* Table */
 .planets
 {
-  border-style: solid ;
-  border-color:  #190727; 
-  margin: 200px;
-  color: #0c0014;
+  border: solid #64129f;
+  border-radius: 10px;
 }
-.planets h2
-
-/*list */
+.planets th, .planets td
+{
+  padding: 8px;
+  font-size: 20px;
+  color:#ffffff;
+  text-align: left;
+  border-bottom: 1px solid #190c23;
+}
+.planets table
+{
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+.planets h3
+{
+  color:#ffffff;
+}
+.planets p
+{
+  color:#9b9da8;
+}
+/* List */
+.facts
+{
+  text-align: center;
+  padding: 60px;
+}
 ul
 {
   text-align: left;
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
-  margin-top: 0px;
+  margin: 20px 20px;
   color:#fffeff;
+  border: solid #190c23;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #0c0014;
+}
+.video-content
+{
+  text-align: center;
+  padding: 20px;     
+}
+/* Contact */
+.form
+{
+  text-align: center;
+  padding: 60px;
+}
+form
+{
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 20px;
+  color:#fffeff;
+  border: solid #190c23;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #0c0014;
+  flex-wrap: wrap;
+}
+.form h3
+{
+  color:#ffffff
+}
+.title-content
+{
+  text-align: center;
+  padding: 10px;     
+}
+.contact-info
+{
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 20px;
+  border: solid #190c23;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #0c0014;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+/* Contact info section */
+
+h4
+{
+  color:#ffffff
+}
 /* Change all the colors*/
 body 
 {
@@ -147,22 +230,15 @@ h2
 }
 p 
 {
-  color: #fffeff
+  color:#9b9da8;
+
 }
 h3
 {
-  color: #1e4470;
+  color: #51528c;
 }
 button
 {
   background-color: #9810fa;
   color: #ffffff;
-}
-table, th, td 
-{
-  border: 2px solid #7b46a1;
-  color: #ffffff;
-  border-collapse: collapse;
-  margin: 0 auto;
-  width: 60%;
 }
