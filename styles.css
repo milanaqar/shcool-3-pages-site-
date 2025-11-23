@@ -8,13 +8,19 @@ header
   border-bottom: 2px solid #190727; /* line */
 }
 /* Title styling */
-h1 
+.title-link 
+{
+  text-decoration: none;
+}
+.title-link h1 
 {
   color: white;
   font-size: 25px;
   margin: 0px;
   font-weight: 400;
+  text-decoration: none;
 }
+
 /* Navigation container */
 nav 
 {
@@ -64,6 +70,7 @@ button
    height: 40px;
    font-size: 16px;
    width: 120px;
+   cursor: pointer;
 }
 .container
 {
@@ -107,34 +114,52 @@ footer
   line-height: 1.6;
 }
 
+
 /* Table */
-.planets
+.planets 
 {
-  border: solid #64129f;
+  border: 1px solid #64129f;
   border-radius: 10px;
+  padding: 20px;
+  margin: 60px auto;
+  background-color: #0c0014;
+  max-width: 900px;
 }
-.planets th, .planets td
+
+.planets h3 
 {
-  padding: 8px;
-  font-size: 20px;
-  color:#ffffff;
+  color: #ffffff;
   text-align: left;
-  border-bottom: 1px solid #190c23;
+  margin-bottom: 5px;
 }
-.planets table
+
+.planets p 
 {
-  border-collapse: collapse;
+  color: #9b9da8;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.planets table 
+{
   width: 100%;
-  margin-top: 20px;
+  border-collapse: collapse;
+  margin: 0;
 }
-.planets h3
+
+.planets th, td 
 {
-  color:#ffffff;
+  padding: 12px;
+  font-size: 16px;
+  color: #9b9da8;
+  text-align: left;
+  border-bottom: 2px solid #190c23;
 }
-.planets p
-{
-  color:#9b9da8;
-}
+
+
+
+
+
 /* List */
 .facts
 {
