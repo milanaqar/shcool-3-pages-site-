@@ -5,6 +5,7 @@
     <title>Astronomy Hub</title>
     <link rel="stylesheet" href="styles.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/2725431b9a.js" crossorigin="anonymous"></script>
     <!-- check responsive design -->
 </head>
 <body>
@@ -62,37 +63,46 @@
             </table>
         </section>
 
-        <section class="facts">
-         <h3>Amazing Astronomy Facts</h3>
-         <p>Mind-blowing facts about our universe</p>
-         <ul>
-             <li>A day on Venus  is longer than its year</li>
-             <li>Neutron stars can spin at a rate of 600 rotations per second</li>
-             <li>There are more stars in the universe than grains of sand on Earth</li>
-             <li>One teaspoon of a neutron star would weigh about 6 billion tons</li>
-             <li>The Sun makes up 99.86% of the mass in our solar system</li>
-             <li>Light from the Sun takes 8 minutes and 20 seconds to reach Earth</li>
-             <li>The footprints on the Moon will last for millions of years due to to wind</li>
-             <li>Jupiter from the Sun takes 8 minutes and 20 seconds to reach Earth</li>
-             <li>The Milky Way galaxy is on a collision course with the Andromeda galaxy</li>
-             <li>Black holes can evaporate over extremely long periods of time</li>
-             <li>Saturn's rings are made mostly of ice particles</li>
-             <li>The coldest place in the universe is the Boomerang Nebula at -272°C</li>
-         </ul>
-         <img src="https://images.ctfassets.net/cnu0m8re1exe/6aHCnOrlNafPgI7nxb3iZU/fe79709fcd4380bf439c2219038c99bf/Neutron-Star.jpg" alt="Neutron Star" height="400" width="400">
-         <figcaption>Neutron stars can spin at a rate of 600 rotations per second</figcaption>
-        </section>
+      <section class="astro-layout">
+  <div class="facts-column">
+    <h3>Amazing Astronomy Facts</h3>
+    <p>Mind-blowing facts about our universe</p>
+    <ul class="star-list">
+  <li><i class="fa-solid fa-star"></i> A day on Venus is longer than its year</li>
+  <li><i class="fa-solid fa-star"></i> Neutron stars can spin up to 600 times per second</li>
+  <li><i class="fa-solid fa-star"></i> There are more stars in the universe than grains of sand on Earth</li>
+  <li><i class="fa-solid fa-star"></i> One teaspoon of a neutron star would weigh about 6 billion tons</li>
+  <li><i class="fa-solid fa-star"></i> The Sun makes up 99.86% of the mass in our solar system</li>
+  <li><i class="fa-solid fa-star"></i> Light from the Sun takes about 8 minutes and 20 seconds to reach Earth</li>
+  <li><i class="fa-solid fa-star"></i> Footprints on the Moon will last for millions of years due to the lack of wind and water erosion</li>
+  <li><i class="fa-solid fa-star"></i> Light from the Sun takes about 43 minutes to reach Jupiter</li>
+  <li><i class="fa-solid fa-star"></i> The Milky Way galaxy is on a collision course with the Andromeda galaxy</li>
+  <li><i class="fa-solid fa-star"></i> Black holes can evaporate via Hawking radiation over extremely long timescales</li>
+  <li><i class="fa-solid fa-star"></i> Saturn’s rings are made mostly of ice particles with some rock and dust</li>
+  <li><i class="fa-solid fa-star"></i> The Boomerang Nebula is the coldest known place in the universe at −272°C</li>
+</ul>
+
+  </div>
+  <div class="image-list">
+    <figure>
+      <img src="https://images.ctfassets.net/cnu0m8re1exe/6aHCnOrlNafPgI7nxb3iZU/fe79709fcd4380bf439c2219038c99bf/Neutron-Star.jpg" alt="Boomerang Nebula" height="200" width="480">
+      <figcaption><i class="fa-solid fa-star"></i>The Boomerang Nebula is the coldest known place in the universe at −272°C</figcaption>
+    </figure>
+  </div>
+</section>
 
         <section>
-            <div class="video-content">
-            <h3>The Scale of the Universe</h3>
-            <video width="1000" height="600" controls muted
-             src="content video.mp4" alt="Scale of the Universe" type="video/mp4"
-             poster="content video poster.png">
-            </video>
-            <figcaption>Understanding the incredible scale of our universe</figcaption>
-            </div>
-        </section>
+  <div class="video-content">
+    <h3>The Scale of the Universe</h3>
+    <figure>
+      <video width="1000" height="600" controls muted poster="content video poster.png">
+        <source src="content video.mp4" type="video/mp4">
+      </video>
+      <figcaption>Understanding the incredible scale of our universe</figcaption>
+    </figure>
+  </div>
+</section>
+
             
     </main>
     <footer>
