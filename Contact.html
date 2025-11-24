@@ -20,23 +20,53 @@
         </nav>
     </header>
     <main>
-        <section class="form">
-         <h2>Get in Touch</h2>
-         <p>Have questions about astronomy or want to join our stargazing<br>community? We'd love to hear from you!</p>
-         <form action="/action_page.php">
-           <h3>Send us a Message</h3>
-           <p>Fill out the form below and we'll respond within 24 hours</p>
-           <label for="fname">Subject:</label><br>
-           <input type="text" id="fname" name="fname" value="What's this about"><br>
-           <label for="lname">Message:</label><br>
-           <input type="text" id="lname" name="lname" value="Tell us more.."><br><br>
-           <label for="fname">Name:</label><br>
-           <input type="text" id="fname" name="fname" value="Your full name"><br>
-           <label for="lname">Email:</label><br>
-           <input type="text" id="lname" name="lname" value="your.email@example.com"><br><br>
-           <input type="submit" value="Send message">
-         </form> 
-        </section>
+ <div class="form-wrapper">
+  <section class="container-form">
+    <h2>Get in Touch</h2>
+    <p>Have questions about astronomy or want to join our stargazingcommunity?<br> We'd love to hear from you!</p>
+
+    <div class="form">
+      <h3>Send us a Message</h3>
+      <p>Fill out the form below and we'll respond within 24 hours</p>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" placeholder="Your full name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" placeholder="your.email@example.com"><br><br>
+
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" placeholder="What's this about"><br><br>
+
+      <label for="message">Message:</label><br>
+      <input type="text" id="message" placeholder="Tell us more.."><br><br>
+
+      <button id="btn">Show Message</button>
+      <div id="result"></div>
+    </div>
+  </section>
+</div>
+
+
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let subject = document.getElementById("subject").value;
+  let message = document.getElementById("message").value;
+
+  let output = `
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Subject:</strong> ${subject}</p>
+    <p><strong>Message:</strong> ${message}</p>
+  `;
+
+  document.getElementById("result").innerHTML = output;
+});
+</script>
+
+
         <section>
           <div class="title-content">
          <h3>Contract information</h3>

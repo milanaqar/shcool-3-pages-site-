@@ -72,14 +72,14 @@ button
    width: 120px;
    cursor: pointer;
 }
-.container
+.container-info
 {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 80px;
   box-sizing: border-box;
 }
-.container div
+.container-info div
 { 
   flex: 1;
   text-align: left;
@@ -101,7 +101,8 @@ footer
 .celestial
 {
   text-align: center;
-  padding: 60px;
+  padding: 5px;
+  margin-top: 40px;
 }
 .celestial h2
 {
@@ -110,17 +111,18 @@ footer
 }
 .celestial p
 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
+  
 }
 
 
 /* Table */
 .planets 
 {
-  border: 1px solid #64129f;
+  border: 1px solid #190c23;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   margin: 60px auto;
   background-color: #0c0014;
   max-width: 900px;
@@ -160,7 +162,7 @@ footer
 
 
 
-/* List */   /* Come back to finish */
+/* Content list */   /* Come back to finish */
 .astro-layout {
   display: flex;
   align-items: stretch; /* Ensures both columns match height */
@@ -228,44 +230,74 @@ footer
   margin-right: 6px;
   color:#cc6eff;
 }
-
-
-
-
 .video-content
 {
   text-align: center;
   padding: 20px;     
 }
-/* Contact */
-.form
+
+
+/* Contact  form */
+#result 
 {
+margin-top: 20px;
+padding: 10px;
+}
+.container-form h2,
+.container-form p {
   text-align: center;
-  padding: 60px;
 }
-form
-{
-  display: inline-block;
-  text-align: left;
+
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.container-form {
+  text-align: center;
+  color: #fffeff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 480px;
+  padding: 20px ;
+  margin: 40px;
   font-size: 18px;
-  line-height: 1.6;
-  margin: 20px 20px;
-  color:#fffeff;
-  border: solid #190c23;
+  line-height: 0.8;
+  color: #fffeff;
+  border: 1px solid #190c23;
   border-radius: 10px;
-  padding: 20px;
   background-color: #0c0014;
-  flex-wrap: wrap;
+  text-align: left;
 }
+
+
+
 .form h3
 {
   color:#ffffff
 }
+.form p 
+{
+  text-align: left;
+}
+
+
+
 .title-content
 {
   text-align: center;
   padding: 10px;     
 }
+
+/* Contact page */
+/* Contact information section */
 .contact-info
 {
   display: inline-block;
@@ -281,8 +313,16 @@ form
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-/* Contact info section */
+.contact-inside                      /* Icons style unfinished */
+{
+  list-style: none;
+}
+.contacs-inside i
+{
+font-size: 12px;
+  margin-right: 6px;
+  color:#faf8fb;
+}                                   /* Icons style unfinished */
 
 h4
 {
@@ -324,5 +364,5 @@ figcaption
 {
   color: #838683;
   text-align: center;
-   margin-top: 10px;
+  margin-top: 10px;
 }
