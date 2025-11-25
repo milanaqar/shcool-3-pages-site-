@@ -4,7 +4,7 @@ header
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 60px;
+  padding: 14px 100px;
   border-bottom: 2px solid #190727; /* line */
 }
 /* Title styling */
@@ -14,7 +14,7 @@ header
 }
 .title-link h1 
 {
-  color: white;
+  color: #fcfcfc;
   font-size: 25px;
   margin: 0px;
   font-weight: 400;
@@ -25,15 +25,15 @@ header
 nav 
 {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 /* All nav links */
 nav a 
 {
-  color: white;
+  color: #fcfcfc;
   text-decoration: none;
   font-size: 16px;
-  padding: 8px 14px;
+  padding: 10px 16px;
   border-radius: 5px;
 }
 /* Here button */
@@ -51,44 +51,47 @@ nav a:hover
 .intro 
 {
   text-align: center;
-  padding: 180px;
+  padding: 220px;
   background-image: url(galaxy-intro.jpg);
   background-size: cover;
 }
 .intro h2
 { 
   font-size: 60px;
+  margin: 10px;
 }
 .intro p
 {
-  font-size: 24px;
+  font-size: 28px;
 }
 /* Button */
 button
 {
    border-radius: 5px;
-   height: 40px;
+   height: 48px;
    font-size: 16px;
-   width: 120px;
+   width: 148px;
    cursor: pointer;
 }
-.container-info
-{
+.container-info {
   display: flex;
-  justify-content: space-between;
-  padding: 80px;
+  justify-content: space-evenly;
+  gap: 1px;              
+  padding: 20px;         
   box-sizing: border-box;
 }
-.container-info div
-{ 
+
+.container-info div { 
   flex: 1;
   text-align: left;
-  padding: 20px;
+  padding: 20px;         
   min-height: 300px;
   font-size: 20px;
   line-height: 1.6;
-  padding: 60px;
+  border-radius: 8px;     
 }
+
+
 footer 
 {
   text-align: center;
@@ -96,6 +99,7 @@ footer
   margin-top: 40px;
   border-top: 2px solid #190727;  /* line */
 }
+
 
 /*Content page styles*/
 .celestial
@@ -130,14 +134,14 @@ footer
 
 .planets h3 
 {
-  color: #ffffff;
+  color: #fcfcfc;
   text-align: left;
   margin-bottom: 5px;
 }
 
 .planets p 
 {
-  color: #9b9da8;
+  color: #fcfcfc;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -153,7 +157,7 @@ footer
 {
   padding: 12px;
   font-size: 16px;
-  color: #9b9da8;
+  color: #fcfcfc;
   text-align: left;
   border-bottom: 2px solid #190c23;
 }
@@ -167,7 +171,7 @@ footer
   display: flex;
   align-items: stretch; /* Ensures both columns match height */
   padding: 100px;
-  color:#9b9da8;
+  color:#fcfcfc;
   gap: 4px;
 }
 
@@ -258,7 +262,7 @@ padding: 10px;
 
 .container-form {
   text-align: center;
-  color: #fffeff;
+  color: #fcfcfc;
 }
 
 .form {
@@ -270,7 +274,7 @@ padding: 10px;
   margin: 40px;
   font-size: 18px;
   line-height: 0.8;
-  color: #fffeff;
+  color: #fcfcfc;
   border: 1px solid #190c23;
   border-radius: 10px;
   background-color: #0c0014;
@@ -281,7 +285,7 @@ padding: 10px;
 
 .form h3
 {
-  color:#ffffff
+  color:#fcfcfc;
 }
 .form p 
 {
@@ -321,12 +325,12 @@ padding: 10px;
 {
 font-size: 12px;
   margin-right: 6px;
-  color:#faf8fb;
+  color:#fcfcfc;
 }                                   /* Icons style unfinished */
 
 h4
 {
-  color:#ffffff
+  color:#fcfcfc;
 }
 /* Change all the colors*/
 body 
@@ -338,31 +342,31 @@ body
 }
 h1 
 {
-  color: #ffffff;
+  color: #fcfcfc;
   padding-top: 0cm; ;
 
 }
 h2
 {
-  color: #cc6eff;
+  color: #a42ff7;
 }
 p 
 {
-  color:#9b9da8;
+  color:#d7c7dc;
 
 }
 h3
 {
-  color: #51528c;
+  color: #6162c3;
 }
 button
 {
   background-color: #9810fa;
-  color: #ffffff;
+  color: #fcfcfc;
 }
 figcaption
 {
-  color: #838683;
+  color: #a59fa8;
   text-align: center;
   margin-top: 10px;
 }
