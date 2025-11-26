@@ -1,11 +1,11 @@
-header                                               /* Header container */
+header                                             /* Header container */
 { display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px 100px;
-  border-bottom: 2px solid #190727; }             /* line */
-.title-link                                         /* Title styling */ 
-{text-decoration: none;}
+  border-bottom: 2px solid #190727;}            /* line */
+.title-link {text-decoration: none;}              /* Title styling */ 
+
 .title-link h1 
 { color: #fcfcfc;
   font-size: 25px;
@@ -13,8 +13,8 @@ header                                               /* Header container */
   font-weight: 400;
   text-decoration: none;}
 
-/* Navigation container */
-nav 
+
+nav                                            /* Navigation container */
 {
   display: flex;
   gap: 12px;
@@ -117,7 +117,7 @@ footer
  /* Table */
 .planets 
 {
-  border: 1px solid #190c23;
+  border: 2px solid #190c23;
   border-radius: 10px;
   padding: 20px;
   margin: 100px auto;
@@ -167,7 +167,7 @@ footer
 
 .astro-layout {                         /* Content list */   /* Come back to finish */
   display: flex;
-  align-items: stretch; /* Ensures both columns match height */
+
   padding: 20px 180px ;
   color:#fcfcfc;
  
@@ -196,7 +196,7 @@ footer
   line-height: 1.6;
   padding: 20px;
   background-color: #0c0014;
-  border: 1px solid #190c23;
+  border: 2px solid #190c23;
   border-radius: 10px;
   flex-grow: 1; /* Makes the list fill vertical space */
 }
@@ -223,6 +223,7 @@ footer
 }
 .star-list li {
   margin: 6px 0;
+  
 }
 
 .star-list i {
@@ -273,7 +274,7 @@ padding: 10px;
   font-size: 18px;
   line-height: 0.8;
   color: #fcfcfc;
-  border: 1px solid #190c23;
+  border: 2px solid #190c23;
   border-radius: 10px;
   background-color: #0c0014;
   text-align: left;
@@ -281,7 +282,7 @@ padding: 10px;
 .form input
 {
   background-color: #0c0014;
-  border: 1px solid #190c23;
+  border: 2px solid #190c23;
   border-radius: 2px;
   padding: 8px;
   color: #fcfcfc;
@@ -341,10 +342,17 @@ padding: 10px;
 }
 
 .contact-item i {
-  font-size: 16px;
-  margin-top: 2%;
+  font-size: 20px;
+  border: 2px solid #190727;
+  background-color: #9810fa;
+  display: inline-block;     /* Ensures width/height can be controlled */
+  width: 28px;               /* Slightly larger than font-size */
+  height: 28px;
+  line-height: 28px;         /* Vertically centers the icon */
+  text-align: center;        /* Horizontally centers the icon */
+  border-radius: 5px;        /* Optional: makes it circular */
+  margin-top: 4px;           /* Adjust if needed */
 }
-
 .contact-item h4 {
   margin: 0;
   font-size: 16px;
@@ -374,7 +382,7 @@ padding: 10px;
 }
 .contacts-inside i {
   margin-right: 10px;
-  color: #9810fa;
+  color: #fcfcfc;
   font-size: 18px;
 }
 
@@ -385,8 +393,8 @@ padding: 10px;
   font-size: 18px;
   line-height: 1.6;
   margin: 10px auto;
-  border: solid #190c23;
-  border-radius: 10px;
+  border: 2px solid #190c23;
+
   padding: 20px;
   background-color: #0c0014;
   width: 1000px;
@@ -401,7 +409,12 @@ padding: 10px;
   flex-direction: column;
   gap: 1px;
 }
-
+.hours hr {
+  border: none;            
+  height: 2px;               
+  background-color: #190727; 
+  margin: 2px;             
+}
 
 
 
@@ -415,7 +428,7 @@ padding: 10px;
 
 .hours table {
   margin: 0 auto;
-  border-collapse: collapse;
+  
 }
 
 .hours td {
@@ -424,14 +437,14 @@ padding: 10px;
 
 
 
-.contact-inside                      /* Icons style unfinished */
+.contact-inside                      
 {list-style: none;}
 .contacs-inside i
 {
 font-size: 12px;
   margin-right: 6px;
   color:#fcfcfc;
-}                                   /* Icons style unfinished */
+}                                  
 
 h4
 {
@@ -440,7 +453,7 @@ h4
 /* Change all the colors*/
 body 
 {
-  background-color: #000000;
+  background-color: #0f0217;
   margin: 0;
   padding: 0;
 
