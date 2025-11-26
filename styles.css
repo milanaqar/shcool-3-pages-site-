@@ -1,25 +1,17 @@
-/* Header container */
-header 
-{
-  display: flex;
+header                                               /* Header container */
+{ display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px 100px;
-  border-bottom: 2px solid #190727; /* line */
-}
-/* Title styling */
-.title-link 
-{
-  text-decoration: none;
-}
+  border-bottom: 2px solid #190727; }             /* line */
+.title-link                                         /* Title styling */ 
+{text-decoration: none;}
 .title-link h1 
-{
-  color: #fcfcfc;
+{ color: #fcfcfc;
   font-size: 25px;
   margin: 0px;
   font-weight: 400;
-  text-decoration: none;
-}
+  text-decoration: none;}
 
 /* Navigation container */
 nav 
