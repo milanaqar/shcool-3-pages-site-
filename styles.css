@@ -119,11 +119,11 @@ footer
 {
   border: 2px solid #190c23;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   margin: 100px auto;
   margin-top: 10px;
   background-color: #0c0014;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .planets h3 
@@ -131,6 +131,7 @@ footer
   color: #fcfcfc;
   text-align: left;
   margin-bottom: 5px;
+  margin-top: ;
 }
 
 .planets p 
@@ -168,8 +169,8 @@ footer
 .astro-layout {                         /* Content list */   /* Come back to finish */
   display: flex;
 
-  padding: 20px 180px ;
-  color:#fcfcfc;
+  padding: 20px 240px ;
+  color:#d7c7dc;
  
 }
 
@@ -211,7 +212,7 @@ footer
 }
 
 .image-list img {
-  height: 640px;
+  height: 600px;
   width: 520px;
  
   border-radius: 10px;
@@ -227,10 +228,11 @@ footer
 }
 
 .star-list i {
-  font-size: 12px;
-  margin-right: 6px;
+  font-size: 14px;
+  margin-right: 8px;
   color:#cc6eff;
 }
+
 .video-content
 {
   text-align: center;
@@ -256,7 +258,7 @@ padding: 10px;
   align-items: center;
   height: 100%;
   margin-top: 40px;
-  padding: 5px;
+  padding: 2px;
 }
 
 .container-form {
@@ -269,7 +271,7 @@ padding: 10px;
   flex-direction: column;
   width: 800px;
   height: 480px;
-  padding: 40px 40px;
+  padding: 20px 20px;
   margin: 20px;
   font-size: 18px;
   line-height: 0.8;
@@ -379,7 +381,9 @@ padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  border: 0;
+  border-radius: 10px;
+  filter: invert(100%);
 }
 .contacts-inside i {
   margin-right: 10px;
@@ -454,7 +458,7 @@ h4
 /* Change all the colors*/
 body 
 {
-  background-color: #060007;
+  background-color: #07000c;
   margin: 0;
   padding: 0;
 
