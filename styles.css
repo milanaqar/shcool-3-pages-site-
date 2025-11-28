@@ -1,163 +1,193 @@
-header                                             /* Header container */
-{ display: flex;
+header
+
+/* Header container */
+  {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px 100px;
-  border-bottom: 2px solid #190727;}            /* line */
-.title-link {text-decoration: none;}              /* Title styling */ 
+  border-bottom: 2px solid #190727;
+}
 
-.title-link h1 
-{ color: #fcfcfc;
+/* line */
+.title-link {
+  text-decoration: none;
+}
+
+/* Title styling */
+
+.title-link h1 {
+  color: #fcfcfc;
   font-size: 25px;
   margin: 0px;
   font-weight: 400;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
 
-nav                                            /* Navigation container */
-{
+header nav
+
+/* Navigation container */
+  {
   display: flex;
   gap: 12px;
 }
+
 /* All nav links */
-nav a 
-{
+header nav a {
   color: #fcfcfc;
   text-decoration: none;
   font-size: 16px;
   padding: 10px 16px;
   border-radius: 5px;
 }
+
 /* Here button */
-.here-btn
-{
-  background-color: #9810fa; /* purple background */
+.here-btn {
+  background-color: #9810fa;
+  /* purple background */
 }
+
 /* Hover effect for all links */
-nav a:hover 
-{
-  background-color: #64129f; /* darker purple on hover */
+nav a:hover {
+  background-color: #64129f;
+  /* darker purple on hover */
 }
 
 /*Intro section*/
-.intro 
-{
+.intro {
   text-align: center;
   padding: 220px;
   background-image: url(galaxy-intro.jpg);
   background-size: cover;
 }
-.intro h2
-{ 
+
+.intro h2 {
   font-size: 60px;
   margin: 10px;
 }
-.intro p
-{
+
+.intro p {
   font-size: 28px;
 }
+
 /* Button */
-button
-{
-   border-radius: 5px;
-   height: 48px;
-   font-size: 16px;
-   width: 148px;
-   cursor: pointer;
+button {
+  border-radius: 5px;
+  height: 48px;
+  font-size: 16px;
+  width: 148px;
+  cursor: pointer;
 }
+
 .container-info {
   display: flex;
   justify-content: space-evenly;
-  gap: 1px;              
-  padding: 20px;         
+  gap: 1px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
-.container-info div { 
-  flex: 1;
+.container-info div {
+
   text-align: left;
-  padding: 20px;         
+  padding: 10px;
   min-height: 300px;
   font-size: 20px;
   line-height: 1.6;
-  border-radius: 8px;     
+  border-radius: 8px;
+}
+
+.video-main {
+  width: 100%;
+  max-width: 700px;
+  /* optional cap */
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.video-main video {
+  width: 100%;
+  /* scales fluidly */
+  height: auto;
+  /* keeps aspect ratio */
+  display: block;
+  border-radius: 10px;
 }
 
 
 
-footer 
-{
+
+footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  border-top: 2px solid #190727;  /* line */
+  border-top: 2px solid #190727;
+  /* line */
 }
 
 
 /*Content page styles*/
-.celestial
-{
+.celestial {
   text-align: center;
   padding: 5px;
   margin-top: 40px;
 }
+
 .celestial h2,
-.container-form h2
-{
+.container-form h2 {
   font-size: 22px;
   margin-bottom: 18px;
 }
+
 .celestial p,
-.container-form p
-{
+.container-form p {
   font-size: 18px;
   line-height: 1.6;
 }
 
 
- /* Table */
-.planets 
-{
+/* Table */
+.planets {
   border: 2px solid #190c23;
   border-radius: 10px;
-  padding: 40px;
+  padding: 20px;
   margin: 100px auto;
   margin-top: 10px;
   background-color: #0c0014;
   max-width: 800px;
 }
 
-.planets h3 
-{
+.planets h3 {
   color: #fcfcfc;
   text-align: left;
   margin-bottom: 5px;
   margin-top: ;
 }
 
-.planets p 
-{
+.planets p {
   color: #d7c7dc;
   text-align: left;
   margin-bottom: 20px;
 }
 
-.planets table 
-{
+.planets table {
   width: 100%;
   border-collapse: collapse;
   margin: 0;
 }
 
-.planets th, td 
-{
+.planets th,
+td {
   padding: 12px;
   font-size: 16px;
   color: #fcfcfc;
   text-align: left;
   border-bottom: 2px solid #190c23;
 }
-.planets td{
+
+.planets td {
   color: #d7c7dc;
 }
 
@@ -167,12 +197,14 @@ footer
 
 
 
-.astro-layout {                         /* Content list */   /* Come back to finish */
+.astro-layout {
+  /* Content list */
+  /* Come back to finish */
   display: flex;
 
-  padding: 20px 140px ;
-  color:#d7c7dc;
- 
+  padding: 20px 140px;
+  color: #d7c7dc;
+
 }
 
 .facts-column {
@@ -200,7 +232,8 @@ footer
   background-color: #0c0014;
   border: 2px solid #190c23;
   border-radius: 10px;
-  flex-grow: 1; /* Makes the list fill vertical space */
+  flex-grow: 1;
+  /* Makes the list fill vertical space */
 }
 
 
@@ -208,45 +241,49 @@ footer
 .image-list {
   flex: 1;
   display: flex;
-  align-items: stretch; /* changed from center */
+  align-items: stretch;
+  /* changed from center */
   justify-content: center;
 }
 
 .image-list img {
   height: 600px;
   width: 520px;
- 
+
   border-radius: 10px;
 
 }
-.star-list
-{
+
+.star-list {
   list-style: none;
 }
+
 .star-list li {
   margin: 6px 0;
-  
+
 }
 
 .star-list i {
   font-size: 14px;
   margin-right: 8px;
-  color:#cc6eff;
+  color: #cc6eff;
 }
 
-.video-content
-{
+.video-content {
   text-align: center;
-  padding: 20px;     
+  padding: 20px;
 }
 
 
 /* Contact  form */
-#result                                /*Contact page*/
-{
-margin-top: 20px;
-padding: 10px;
+#result
+
+/*Contact page*/
+  {
+  margin-top: 20px;
+  padding: 10px;
 }
+
 .container-form h2,
 .container-form p {
   text-align: center;
@@ -282,50 +319,48 @@ padding: 10px;
   background-color: #0c0014;
   text-align: left;
 }
-.form input
-{
+
+.form input {
   background-color: #0c0014;
   border: 2px solid #190c23;
   border-radius: 2px;
   padding: 8px;
   color: #fcfcfc;
 }
-.form h3
-{
-  color:#fcfcfc;
+
+.form h3 {
+  color: #fcfcfc;
   margin-top: 1px;
   margin-bottom: 2px;
 }
-.form p 
-{
+
+.form p {
   text-align: left;
   margin-top: 4px;
- 
+
 }
-#btn
-{
-   border-radius: 5px;
-   height: 80px;
-   font-size: 16px;
-   width: 800px;
-   cursor: pointer;
-   padding: 8px;
+
+#btn {
+  border-radius: 5px;
+  height: 80px;
+  font-size: 16px;
+  width: 800px;
+  cursor: pointer;
+  padding: 8px;
 }
 
 /* Contact info */
-.contact-title
-{
+.contact-title {
   padding: 40px;
   padding-bottom: 20px;
 }
 
-.contact-title h3
-{
+.contact-title h3 {
   text-align: center;
-  font-size: 20px;     
+  font-size: 20px;
 }
-.contact-title p
-{
+
+.contact-title p {
   font-size: 18px;
   text-align: center;
 }
@@ -337,31 +372,37 @@ padding: 10px;
   gap: 1px;
 }
 
-.contact-item a:hover
-{
-  color:#9810fa;
-  
+.contact-item a:hover {
+  color: #9810fa;
+
 }
 
 .contact-item {
   display: flex;
   gap: 0px;
   padding: 8px;
-  
+
 }
 
 .contact-item i {
   font-size: 20px;
   border: 2px solid #190727;
   background-color: #9810fa;
-  display: inline-block;     /* Ensures width/height can be controlled */
-  width: 28px;               /* Slightly larger than font-size */
+  display: inline-block;
+  /* Ensures width/height can be controlled */
+  width: 28px;
+  /* Slightly larger than font-size */
   height: 28px;
-  line-height: 28px;         /* Vertically centers the icon */
-  text-align: center;        /* Horizontally centers the icon */
-  border-radius: 5px;        /* Optional: makes it circular */
-  margin-top: 4px;           /* Adjust if needed */
+  line-height: 28px;
+  /* Vertically centers the icon */
+  text-align: center;
+  /* Horizontally centers the icon */
+  border-radius: 5px;
+  /* Optional: makes it circular */
+  margin-top: 4px;
+  /* Adjust if needed */
 }
+
 .contact-item h4 {
   margin: 0;
   font-size: 16px;
@@ -373,7 +414,7 @@ padding: 10px;
 }
 
 .contact-item a {
-  color:#d7c7dc;
+  color: #d7c7dc;
   text-decoration: none;
 }
 
@@ -392,6 +433,7 @@ padding: 10px;
   border-radius: 50px;
   filter: invert(100%);
 }
+
 .contacts-inside i {
   margin-right: 10px;
   color: #fcfcfc;
@@ -410,9 +452,10 @@ padding: 10px;
   padding: 20px;
   background-color: #0c0014;
   width: 1000px;
-  
+
 
 }
+
 .contacts-inside {
   display: flex;
   justify-content: center;
@@ -422,11 +465,12 @@ padding: 10px;
   flex-direction: column;
   gap: 1px;
 }
+
 .hours hr {
-  border: none;            
-  height: 2px;               
-  background-color: #190727; 
-  margin: 2px;             
+  border: none;
+  height: 2px;
+  background-color: #190727;
+  margin: 2px;
 }
 
 
@@ -439,102 +483,114 @@ padding: 10px;
   text-align: center;
 
 }
-.hours h3
-{
+
+.hours h3 {
   color: #fcfcfc;
 }
+
 .hours table {
   margin: 0 auto;
-  
+
 }
 
 .hours td {
   padding: 8px 20px;
-  
+
 }
 
 
 
-.contact-inside                      
-{list-style: none;}
-.contacs-inside i
-{
-font-size: 12px;
+.contact-inside {
+  list-style: none;
+}
+
+.contacs-inside i {
+  font-size: 12px;
   margin-right: 6px;
-  color:#fcfcfc;
-}                                  
-
-h4
-{
-  color:#fcfcfc;
+  color: #fcfcfc;
 }
+
+h4 {
+  color: #fcfcfc;
+}
+
 /* Change all the colors*/
-body 
-{
+body {
   background-color: #07000c;
   margin: 0;
   padding: 0;
 
 }
-h1 
-{
+
+h1 {
   color: #fcfcfc;
-  padding-top: 0cm; ;
+  padding-top: 0cm;
+  ;
 
 }
-h2
-{
+
+h2 {
   color: #a42ff7;
 }
-p 
-{
-  color:#d7c7dc;
+
+p {
+  color: #d7c7dc;
 
 }
-h3
-{
+
+h3 {
   color: #6162c3;
 }
-button
-{
+
+button {
   background-color: #9810fa;
   color: #fcfcfc;
 }
-figcaption
-{
+
+figcaption {
   color: #a59fa8;
   text-align: center;
   margin-top: 10px;
+  font-size: 16px;
 }
+
 @media (max-width: 768px) {
+
   /* General layout adjustments */
   body {
     background-color: #07000c;
-    font-size: 16px;
+    font-size: 12px;
     padding: 0;
     margin: 0;
   }
 
   header {
-    flex-direction: column;
-    padding: 14px 20px;
-    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px !important;
+    /* override desktop padding */
   }
+
 
   .title-link h1 {
-    font-size: 22px;
+    font-size: 16px;
+    margin: 10px;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+  header nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
   }
 
-  nav a {
-    font-size: 14px;
-    padding: 8px 12px;
+
+  header nav a {
+    font-size: 12px;
+    padding: 6px 12px;
   }
+
 
   /* Intro page */
   .intro {
@@ -544,122 +600,285 @@ figcaption
   }
 
   .intro h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .intro p {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   button {
-    width: 100%;
-    height: 48px;
-    font-size: 16px;
+    width: 88px;
+    height: 28px;
+    font-size: 12px;
   }
 
-  /* Content page */
   .container-info {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
   }
 
   .container-info div {
-    font-size: 16px;
-    padding: 10px;
-    min-height: auto;
+    font-size: 12px;
+    padding: 4px;
+    min-height: 0;
   }
 
-  .planets {
-    padding: 20px;
-    margin: 20px auto;
+  .container-info h3 {
+    padding-bottom: 0;
+  }
+
+  .container-info p {
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .video-main {
     max-width: 100%;
+    /* allow full width on small screens */
+
   }
 
-  .planets th, .planets td {
-    font-size: 14px;
+  .video-main figcaption {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 10px;
+    margin-top: 20px;
     padding: 8px;
+  }
+
+
+
+
+
+  /* Celestial section */
+  .celestial {
+    font-size: 12px;
+    padding: 4px;
+    min-height: unset;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .celestial h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .celestial p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  /* Planets table */
+  .planets {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 74%;
+  }
+
+  .planets th,
+  .planets td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  /* Facts + image layout */
+  .list-title h3 {
+    font-size: 14px;
+
+  }
+
+  .list-title p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 2px;
+  }
+
+  .list-title {
+    padding-top: 20px;
+    margin-bottom: 5px;
   }
 
   .astro-layout {
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
   }
 
-  .facts-column, .image-list {
-    width: 100%;
+  .facts-column {
+
     max-width: 100%;
   }
 
+  .image-list {
+    max-height: 50%;
+  }
+
   .facts-column ul {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 6px;
   }
 
   .image-list img {
+    /* Come back to make the image smaller */
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    padding-bottom: 10px;
+
   }
 
-  .video-content iframe {
-    width: 100%;
+  .image-list figure {
+    margin-bottom: 0;
+  }
+
+  /* Video */
+
+  .video-content video {
+    max-width: 100%;
     height: auto;
+
   }
 
-  /* Contact page */
+  .video-content figcaption {
+    font-size: 10px;
+  }
+
+
+
+
+
+
+
+
+  /* Contact form */
   .form-wrapper {
-    flex-direction: column;
-    padding: 10px;
+    font-size: 12px;
+    padding: 4px;
+    min-height: unset;
+    text-align: center;
+    margin-top: 10px;
   }
+
+  .container-form h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .container-form p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
 
   .form {
-    width: 100%;
+    width: 80%;
+    /* full width on small screens */
     height: auto;
+    /* let height adjust naturally */
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
+    margin: 20px;
+    margin-bottom: 0;
+  }
+
+  .form h3 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .form p {
+    font-size: 12px;
+    padding-bottom: 8px;
+  }
+
+  .form input {
+    font-size: 12px;
+    padding: 4px;
   }
 
   #btn {
     width: 100%;
-    height: 60px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  /* Contact info section */
+  .contact-title h3 {
+    font-size: 14px;
+
+  }
+
+  .contact-title p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 2px;
+
   }
 
   .contact-info {
     flex-direction: column;
-    width: 100%;
-    padding: 10px;
+    width: 86%;
+    padding: 4px;
+    font-size: 12px;
   }
 
   .contacts-inside {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    text-align: left;
   }
 
   .contact-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    padding: 4px;
+    line-height: 1.4;
   }
 
   .contact-item i {
     margin-bottom: 6px;
+
   }
 
+  .contact-item h4,
+  .contact-item p {
+    font-size: 12px;
+  }
+
+  /* Map */
   .map {
     width: 100%;
     min-width: auto;
     border-radius: 20px;
+    padding-top: 10px;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hours table */
+  .hours {
+    padding: 10px;
   }
 
   .hours table {
     width: 100%;
+
+    line-height: 1.4;
+
   }
 
   .hours td {
     padding: 6px 10px;
+    font-size: 12px;
+
   }
+
 }
-
-
-

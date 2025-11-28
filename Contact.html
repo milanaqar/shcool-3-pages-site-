@@ -1,130 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Astronomy Hub-Contact</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2725431b9a.js" crossorigin="anonymous"></script>
-    <!-- check responsive design -->
+  <meta charset="UTF-8" />
+  <title>Astronomy Hub-Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/2725431b9a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <a href="Main.html" class="title-link"><h1>Astronomy Hub</h1></a>
-        <nav> 
-           <div class="nav-links">
-            <a href="Main.html" target="_blank">Home</a>
-            <a href="Content.html" target="_blank">Content</a>
-            <a class="here-btn" href="Contact.html" target="_blank">Contact</a>
-           </div>
-        </nav>
-    </header>
-    <main>
- <div class="form-wrapper">
-  <section class="container-form">
-    <h2>Get in Touch</h2>
-    <p>Have questions about astronomy or want to join our stargazingcommunity?<br> We'd love to hear from you!</p>
+  <header>
+    <a href="Main.html" class="title-link">
+      <h1>Astronomy Hub</h1>
+    </a>
+    <nav>
+      <a href="Main.html" target="_blank">Home</a>
+      <a href="Content.html" target="_blank">Content</a>
+      <a class="here-btn" href="Contact.html" target="_blank">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="form-wrapper">
+      <section class="container-form">
+        <h2>Get in Touch</h2>
+        <p>
+          Have questions about astronomy or want to join our
+          stargazingcommunity?<br />We'd love to hear from you!
+        </p>
 
-    <div class="form">
-      <h3>Send us a Message</h3>
-      <p>Fill out the form below and we'll respond within 24 hours</p>
+        <div class="form">
+          <h3>Send us a Message</h3>
+          <p>Fill out the form below and we'll respond within 24 hours</p>
 
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" placeholder="Your full name"><br><br>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" placeholder="Your full name" /><br /><br />
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" placeholder="your.email@example.com"><br><br>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" placeholder="your.email@example.com" /><br /><br />
 
-      <label for="subject">Subject:</label><br>
-      <input type="text" id="subject" placeholder="What's this about"><br><br>
+          <label for="subject">Subject:</label><br />
+          <input type="text" id="subject" placeholder="What's this about" /><br /><br />
 
-      <label for="message">Message:</label><br>
-      <input type="text" id="message" placeholder="Tell us more.."><br><br>
+          <label for="message">Message:</label><br />
+          <input type="text" id="message" placeholder="Tell us more.." /><br /><br />
 
-      <button id="btn">Show Message</button>
-      <div id="result"></div>
+          <button id="btn">Show Message</button>
+          <div id="result"></div>
+        </div>
+      </section>
     </div>
-  </section>
-</div>
 
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
 
-<script>
-document.getElementById("btn").addEventListener("click", function() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let subject = document.getElementById("subject").value;
-  let message = document.getElementById("message").value;
-
-  let output = `
+        let output = `
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Subject:</strong> ${subject}</p>
     <p><strong>Message:</strong> ${message}</p>
   `;
 
-  document.getElementById("result").innerHTML = output;
-});
-</script>
+        document.getElementById("result").innerHTML = output;
+      });
+    </script>
 
-
-        <section>
-          <div class="contact-title">
-         <h3>Contract information</h3>
-         <p>Reach to us through any of these channels</p>
+    <section>
+      <div class="contact-title">
+        <h3>Contract information</h3>
+        <p>Reach to us through any of these channels</p>
+      </div>
+      <div class="contact-info">
+        <div class="contacts-inside">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>
+                <a href="mailto:contact@astronomy-hub.com">contact@astronomy-hub.com</a>
+              </p>
+            </div>
           </div>
-         <div class="contact-info">
-       <div class="contacts-inside">
-  <div class="contact-item">
-    <i class="fa-solid fa-envelope"></i>
-    <div>
-      <h4>Email</h4>
-      <p><a href="mailto:contact@astronomy-hub.com">contact@astronomy-hub.com</a></p>
-    </div>
-  </div>
 
-  <div class="contact-item">
-    <i class="fa-solid fa-phone"></i>
-    <div>
-      <h4>Phone</h4>
-      <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
-    </div>
-  </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+            </div>
+          </div>
 
-  <div class="contact-item">
-    <i class="fa-solid fa-location-dot"></i>
-    <div>
-      <h4>Address</h4>
-      <p><a href="https://www.google.com/maps/place/123+Astronomy+Lane,+Star+City,+Universe">123 Astronomy Lane, Star City, Universe</a></p>
-    </div>
-  </div>
-</div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Address</h4>
+              <p>
+                <a href="https://www.google.com/maps/place/123+Astronomy+Lane,+Star+City,+Universe">123 Astronomy Lane,
+                  Star City, Universe</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div class="map">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.086828895417!2d-73.9755079732729!3d40.78210522138319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588e559bcbf3%3A0xdf41d4736b37d3e3!2sHayden%20Planetarium!5e0!3m2!1sen!2sgr!4v1764265154271!5m2!1sen!2sgr" 
-             width="480" 
-             height="400"      
-             allowfullscreen 
-             loading="lazy" 
-             referrerpolicy="no-referrer-when-downgrade">
-         </iframe>
-         </div>
-         <div class="hours">
-          <hr>
-         <h3>Planetarium Hours</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.086828895417!2d-73.9755079732729!3d40.78210522138319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588e559bcbf3%3A0xdf41d4736b37d3e3!2sHayden%20Planetarium!5e0!3m2!1sen!2sgr!4v1764265154271!5m2!1sen!2sgr"
+            width="480" height="400" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="hours">
+          <hr />
+          <h3>Planetarium Hours</h3>
           <table>
-           <tr>
-              <td>Monday - Friday</td><td>9:00 AM - 10:00 PM</td>
-           </tr>
-           <tr>
-             <td>Saturday - Sunday</td><td>10:00 AM - 11:00 PM</td>
-           </tr>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>9:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>10:00 AM - 11:00 PM</td>
+            </tr>
           </table>
-          </div>
-          </div>
-        </section>
-    </main>
-    <footer>
-      <p>&copy; 2025 Astronomy Hub. Exploring the cosmos together.<br>Made with passion for the stars</p>
-    </footer>
-<body>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy; 2025 Astronomy Hub. Exploring the cosmos together.<br />Made with
+      passion for the stars
+    </p>
+  </footer>
+</body>
+
 </html>
