@@ -7,24 +7,25 @@
   <title>Astronomy Hub-Contact</title>
   <link rel="stylesheet" href="styles.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <script src="https://kit.fontawesome.com/2725431b9a.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2725431b9a.js" crossorigin="anonymous"></script> <!-- Font Awesome icons -->
 </head>
 
 <body>
-  <header>
+  <header> <!-- Top section: site title + navigation -->
     <a href="Main.html" class="title-link"><h1>Astronomy Hub</h1></a>
-    <nav>
+    <nav> <!-- Navigation menu -->
       <a href="Main.html">Home</a>
       <a href="Content.html">Content</a>
       <a class="here-btn" href="Contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <div class="form-wrapper">
-      <section class="container-form">
+    <div class="form-wrapper"> <!-- Contact form wrapper -->
+      <section class="container-form"> <!-- Form section -->
         <h2>Get in Touch</h2>
         <p>Have questions about astronomy or want to join our stargazingcommunity?<br />We'd love to hear from you!</p>
-        <form class="form">
+        <form class="form"> <!-- Interactive form -->
           <h3>Send us a Message</h3>
           <p>Fill out the form below and we'll respond within 24 hours</p>
           <label for="name">Name:</label><br/>
@@ -37,32 +38,33 @@
           <input type="text" id="message" placeholder="Tell us more..."/><br/><br/>
           <button id="btn" type="button">Show Message</button>
           </form>
-         <div id="result"></div>
+         <div id="result"></div> <!-- Result box for showing submitted info -->
         </div>
       </section>
     </div>
+
     <section>
-      <div class="contact-title">
+      <div class="contact-title"> <!-- Contact info section -->
         <h3>Contact information</h3>
         <p>Reach to us through any of these channels</p>
       </div>
       <div class="contact-info">
         <div class="contacts-inside">
           <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-envelope"></i> <!-- Email -->
             <div>
              <h4>Email</h4>
              <p><a href="mailto:contact@astronomy-hub.com">contact@astronomy-hub.com</a></p>  
             </div>  
           </div>
-          <div class="contact-item">
+          <div class="contact-item"> <!-- Phone -->
             <i class="fa-solid fa-phone"></i>
             <div>
               <h4>Phone</h4>
               <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
             </div>
           </div>
-          <div class="contact-item">
+          <div class="contact-item"> <!-- Address -->
             <i class="fa-solid fa-location-dot"></i>
             <div>
               <h4>Address</h4>
@@ -70,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="map">
+        <div class="map"> <!-- Embedded Google Map -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.086828895417!2d-73.9755079732729!3d40.78210522138319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588e559bcbf3%3A0xdf41d4736b37d3e3!2sHayden%20Planetarium!5e0!3m2!1sen!2sgr!4v1764265154271!5m2!1sen!2sgr"
             width="480" height="400" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -78,7 +80,7 @@
         </div>
         <div class="hours">
           <hr/>
-          <h3>Planetarium Hours</h3>
+          <h3>Planetarium Hours</h3> <!-- Opening hours -->
           <table>
             <tr><td>Monday - Friday</td><td>9:00 AM - 10:00 PM</td></tr>
             <tr><td>Saturday - Sunday</td><td>10:00 AM - 11:00 PM</td></tr>  
@@ -87,10 +89,12 @@
       </div>
     </section>
   </main>
-  <footer>
+
+  <footer> <!-- Bottom section -->
     <p>&copy; 2025 Astronomy Hub. Exploring the cosmos together.<br/>Made with passion for the stars</p> 
   </footer>
-  <script>
+  
+  <script> // JavaScript: show form result 
       document.getElementById("btn").addEventListener
       ("click", function (){ 
         let name = document.getElementById("name").value;
@@ -104,7 +108,7 @@
        <p><strong>Message:</strong> ${message}</p>`;
        let resultBox = document.getElementById("result");
        resultBox.innerHTML = output;
-       resultBox.style.display = "flex";
+       resultBox.style.display = "flex"; // make result visible
       });
     </script>
 </body>
