@@ -74,7 +74,7 @@ nav a:hover {
 /* Button */
 button {
   border-radius: 5px;
-  height: 48px;
+  height: 40px;
   font-size: 16px;
   width: 148px;
   cursor: pointer;
@@ -277,12 +277,25 @@ td {
 
 /* Contact  form */
 #result
+  {
+  display: none;
+  flex-direction: column;
+  border: 2px solid #190c23;
+  border-radius: 10px;
+  background-color: #0c0014;
+  width: 90%;
+  max-width: 400px;
+  min-height: 80px;
+  font-size: 14px;
+  line-height: 0.4;
+  padding: 6px 18px;
+  margin: 4px auto;
+  text-align: left;
+  align-items: flex-start;
+}
 
 /*Contact page*/
-  {
-  margin-top: 20px;
-  padding: 10px;
-}
+
 
 .container-form h2,
 .container-form p {

@@ -1,3 +1,4 @@
+<!-- Astronomy Hub Content page structure: header, main content (celestial info + planets table + facts list + video), footer -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,31 +7,34 @@
  <title>Astronomy Hub-Content</title>
  <link rel="stylesheet" href="styles.css"> 
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="https://kit.fontawesome.com/2725431b9a.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/2725431b9a.js" crossorigin="anonymous"></script> <!-- Font Awesome icons -->
 </head>
 
 <body>
-    <header>
+    <header> <!-- Top section: site title + navigation -->
      <a href="Main.html" class="title-link"><h1>Astronomy Hub</h1></a>
-        <nav>
-         <a  href="Main.html" target="_blank">Home</a>
-         <a  class="here-btn" href="Content.html" target="_blank">Content</a>
-         <a  href="Contact.html" target="_blank">Contact</a>
+        <nav> <!-- Navigation menu -->
+         <a  href="Main.html">Home</a>
+         <a  class="here-btn" href="Content.html">Content</a>
+         <a  href="Contact.html">Contact</a>
         </nav>
     </header>
     <main>
-        <section class="celestial">
+        <section class="celestial"> <!-- Introductory text section -->
             <article>
-             <h2>Celestial Knowledge</h2>
-             <p>Our solar system is just one of billions in the Milky Way galaxy. It consists of the Sun, eight planets, numerous<br>moons, asteroids, comets, and other celestial bodies. Each planet has unique characteristics that make it fascinating to study.<br>
-             Beyond our solar system lies the vast expanse of space, filled with countless galaxies, nebulae, and cosmic<br>phenomena that continue to amaze astronomers and space enthusiasts alike.
+             <h2>Celestial Knowledge</h2> 
+             <p>Our solar system is just one of billions in the Milky Way galaxy. It consists of the Sun, eight planets, numerous<br>
+             moons, asteroids, comets, and other celestial bodies. 
+             Each planet has unique characteristics that make it fascinating to study.<br>
+             Beyond our solar system lies the vast expanse of space, filled with countless galaxies, nebulae, and cosmic<br>
+             phenomena that continue to amaze astronomers and space enthusiasts alike.
              </p>
             </article>
         </section>
-        <section class="planets">
+        <section class="planets"> <!-- Table of planets -->
          <h3>Planets of Our Solar System</h3>  
          <p>Key facts about the eight planets orbiting our Sun</p> 
-            <table>
+         <table>
              <tr><th>Planet</th><th>Distance</th><th>Diameter</th><th>Moons</th></tr>
              <tr><td>Mercury</td><td>57.9 million km</td><td>4,879 km</td><td>0</td></tr>
              <tr><td>Venus</td><td>108.2 million km</td><td>12,104 km</td><td>0</td></tr>
@@ -38,60 +42,56 @@
              <tr><td>Mars</td><td>227.9 million km</td><td>6,779 km</td><td>2</td></tr>
              <tr><td>Jupiter</td><td>778.5 million km</td><td>139,820 km</td><td>95</td> </tr>
              <tr><td>Saturn</td><td>1.43 billion km</td><td>116,460 km</td><td>146</td></tr>
-                    <tr><td>Uranus</td><td>2.87 billion km</td><td>50,724 km</td><td>27</td></tr>
-                     <tr><td>Neptune</td><td>4.50 billion km</td><td>49,244 km</td><td>14</td></tr>
-                
-            </table>
+             <tr><td>Uranus</td><td>2.87 billion km</td><td>50,724 km</td><td>27</td></tr>
+             <tr><td>Neptune</td><td>4.50 billion km</td><td>49,244 km</td><td>14</td></tr>  
+         </table>
+        </section> <!-- Facts + image section -->
+        <section>
+         <div class="list-title">
+             <h3>Amazing Astronomy Facts</h3>
+             <p>Mind-blowing facts about our universe</p>
+         </div>
+         <div class="astro-layout">       
+             <div class="facts-column"> <!-- List of facts with star icons -->
+                 <ul class="star-list">
+                     <li><i class="fa-solid fa-star"></i>A day on Venus is longer than its year.</li>
+                     <li><i class="fa-solid fa-star"></i>Neutron stars can spin up to 600 times per second.</li>
+                     <li><i class="fa-solid fa-star"></i>There are more stars in the universe than grains of sand on Earth.</li>
+                     <li><i class="fa-solid fa-star"></i>One teaspoon of a neutron star would weigh about 6 billion tons.</li>
+                     <li><i class="fa-solid fa-star"></i>The Sun makes up 99.86% of the mass in our solar system.</li>
+                     <li><i class="fa-solid fa-star"></i>Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.</li>
+                     <li><i class="fa-solid fa-star"></i>Footprints on the Moon will last for millions of years due to the lack of wind and water erosion.</li>
+                     <li><i class="fa-solid fa-star"></i>Light from the Sun takes about 43 minutes to reach Jupiter.</li>
+                     <li><i class="fa-solid fa-star"></i>The Milky Way galaxy is on a collision course with the Andromeda galaxy.</li>
+                     <li><i class="fa-solid fa-star"></i>Black holes can evaporate via Hawking radiation over extremely long timescales.</li>
+                     <li><i class="fa-solid fa-star"></i>Saturn’s rings are made mostly of ice particles with some rock and dust.</li>
+                     <li><i class="fa-solid fa-star"></i>The Boomerang Nebula is the coldest known place in the universe at −272°C.</li>
+                     <li><i class="fa-solid fa-star"></i>Neptune’s moon Triton orbits backwards compared to most moons.</li>
+                     <li><i class="fa-solid fa-star"></i>Space is completely silent because there’s no air or atmosphere to carry sound.</li>
+                     <li><i class="fa-solid fa-star"></i>Mercury’s temperature swings from −280°F at night to 800°F during the day.</li>
+                 </ul>
+             </div>
+             <div class="image-list"> <!-- Supporting image -->
+             <figure><img src="Milky-Way.jpg" alt="Milky-Way"></figure>
+             </div>    
+         </div>    
         </section>
-        <section>
-      <div class="list-title">
-      <h3>Amazing Astronomy Facts</h3>
-       <p>Mind-blowing facts about our universe</p>
-      </div>
-     <div class="astro-layout">       
-     <div class="facts-column">
-     <ul class="star-list">
-      <li><i class="fa-solid fa-star"></i>A day on Venus is longer than its year.</li>
-     <li><i class="fa-solid fa-star"></i>Neutron stars can spin up to 600 times per second.</li>
-     <li><i class="fa-solid fa-star"></i>There are more stars in the universe than grains of sand on Earth.</li>
-     <li><i class="fa-solid fa-star"></i>One teaspoon of a neutron star would weigh about 6 billion tons.</li>
-     <li><i class="fa-solid fa-star"></i>The Sun makes up 99.86% of the mass in our solar system.</li>
-     <li><i class="fa-solid fa-star"></i>Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.</li>
-     <li><i class="fa-solid fa-star"></i>Footprints on the Moon will last for millions of years due to the lack of wind and water erosion.</li>
-     <li><i class="fa-solid fa-star"></i>Light from the Sun takes about 43 minutes to reach Jupiter.</li>
-     <li><i class="fa-solid fa-star"></i>The Milky Way galaxy is on a collision course with the Andromeda galaxy.</li>
-     <li><i class="fa-solid fa-star"></i>Black holes can evaporate via Hawking radiation over extremely long timescales.</li>
-     <li><i class="fa-solid fa-star"></i>Saturn’s rings are made mostly of ice particles with some rock and dust.</li>
-     <li><i class="fa-solid fa-star"></i>The Boomerang Nebula is the coldest known place in the universe at −272°C.</li>
-     <li><i class="fa-solid fa-star"></i>Neptune’s moon Triton orbits backwards compared to most moons.</li>
-     <li><i class="fa-solid fa-star"></i>Space is completely silent because there’s no air or atmosphere to carry sound.</li>
-     <li><i class="fa-solid fa-star"></i>Mercury’s temperature swings from −280°F at night to 800°F during the day.</li>
-     </ul>
-      </div>
-     <div class="image-list">
-     <figure>
-      <img src="Milky-Way.jpg" alt="Boomerang Nebula">
-     </figure>
-     </div>
-     </div>
-     </section>
-
-        <section>
-     <div class="video-content">
-      <h3>The Scale of the Universe</h3>
-      <figure>
-      <video width="1000" height="600" controls muted poster="content video poster.png">
-        <source src="content video.mp4" type="video/mp4">
-      </video>
-      <figcaption>Understanding the incredible scale of our universe</figcaption>
-      </figure>
-     </div>
-     </section>
-
-            
+        <section> <!-- Video section -->
+         <div class="video-content">
+             <h3>The Scale of the Universe</h3>
+             <figure>
+                 <video width="1000" height="600" controls muted poster="content video poster.png">
+                 <source src="content video.mp4" type="video/mp4">
+                 Your browser does not support the video tag.
+                 </video>
+                 <figcaption>Understanding the incredible scale of our universe</figcaption>
+             </figure>
+         </div>
+        </section>
     </main>
-    <footer>
+    <footer> <!-- Bottom section -->
     <p>&copy; 2025 Astronomy Hub. Exploring the cosmos together.<br>Made with passion for the stars</p>
     </footer>
 </body>
+
 </html> 
