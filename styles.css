@@ -1,4 +1,4 @@
-header {
+header {                                               /* HEADER & NAVIGATION */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ header nav a {
 
 nav a:hover {background-color: #64129f;}
   
-.intro {
+.intro {                                                 /* INTRO SECTION */
   text-align: center;
   padding: 220px;
   background-image: url(galaxy-intro.jpg);
@@ -48,14 +48,14 @@ button {
   width: 148px;
   cursor: pointer;}
 
-.container-info {
+.container-info {                                          /* TEXT */
   display: flex;
   justify-content: space-evenly;
   gap: 1px;
   padding: 10px;
   box-sizing: border-box;}
 
-.container-info div {
+.container-info div {                   
   text-align: left;
   padding: 10px;
   min-height: 300px;
@@ -63,7 +63,7 @@ button {
   line-height: 1.6;
   border-radius: 8px;}
 
-.video-main {
+.video-main {                                               /* VIDEO */
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
@@ -76,16 +76,15 @@ button {
   display: block;
   border-radius: 10px;}
 
-footer {
+footer {                                                       /* FOOTER */
   text-align: center;
   padding: 20px;
   margin-top: 40px;
   border-top: 2px solid #190727;}
 
+                                                               /* CONTENT PAGE */
 
-
-
-.celestial {
+.celestial {                                                    /* TEXT */
   text-align: center;
   padding: 5px;
   margin-top: 40px;}
@@ -98,7 +97,7 @@ footer {
   font-size: 18px;
   line-height: 1.6;}
 
-.planets {
+.planets {                                                       /* TABLE */
   border: 2px solid #190c23;
   border-radius: 10px;
   padding: 20px;
@@ -131,7 +130,15 @@ footer {
 
 .planets td {color: #d7c7dc;}
 
-.astro-layout {
+.list-title h3 {                                                /* TITLE */
+  font-size: 20px;
+  text-align: center;}
+
+.list-title p {
+  font-size: 18px;
+  text-align: center;}
+
+.astro-layout {                                                    /* LIST */
   display: flex;
   padding: 20px 140px;
   color: #d7c7dc;}
@@ -143,14 +150,6 @@ footer {
   flex-direction: column;
   justify-content: center;}
 
-.list-title h3 {
-  font-size: 20px;
-  text-align: center;}
-
-.list-title p {
-  font-size: 18px;
-  text-align: center;}
-
 .facts-column ul {
   font-size: 18px;
   line-height: 1.6;
@@ -160,7 +159,7 @@ footer {
   border-radius: 10px;
   flex-grow: 1;}
 
-.image-list {
+.image-list {                                                          /* IMAGE */
   flex: 1;
   display: flex;
   align-items: stretch;
@@ -171,7 +170,7 @@ footer {
   width: 520px;
   border-radius: 10px;}
 
-.star-list {list-style: none;}
+.star-list {list-style: none;}                                          /* STAR ICON */
 
 .star-list li {margin: 6px 0;}
 
@@ -180,11 +179,11 @@ footer {
   margin-right: 8px;
   color: #cc6eff;}
 
-.video-content {
+.video-content {                                                         /* VIDEO */            
   text-align: center;
   padding: 20px;}
 
-#result{
+#result{                                                                /* JAVASCRIPT RESULT */
   display: none;
   flex-direction: column;
   border: 2px solid #190c23;
@@ -200,10 +199,9 @@ footer {
   text-align: left;
   align-items: flex-start;}
   
-  
+                                                                        /* CONTACT PAGE */
 
-
-.container-form h2, .container-form p {text-align: center;}
+.container-form h2, .container-form p {text-align: center;}             /* FORM */
 
 .form-wrapper {
   display: flex;
@@ -256,7 +254,7 @@ footer {
   cursor: pointer;
   padding: 8px;}
 
-.contact-title {
+.contact-title {                                                        /* CONTACT INFO */
   padding: 40px;
   padding-bottom: 20px;}
 
@@ -280,7 +278,7 @@ footer {
   gap: 0px;
   padding: 8px;}
 
-.contact-item i {
+.contact-item i {                                                        /* ICONS */
   font-size: 20px;
   border: 2px solid #190727;
   background-color: #9810fa;
@@ -306,7 +304,7 @@ footer {
 
 .contact-item a:hover {text-decoration: underline;}
 
-.map {
+.map {                                                                  /* MAP */
   flex: 0.8;
   min-width: 150px;
   display: flex;
@@ -343,7 +341,7 @@ footer {
   flex-direction: column;
   gap: 1px;}
 
-.hours hr {
+.hours hr {                                                            /* HOURS */
   border: none;
   height: 2px;
   background-color: #190727;
@@ -368,6 +366,8 @@ footer {
   font-size: 12px;
   margin-right: 6px;
   color: #fcfcfc;}
+
+                                                                       /* GLOBAL STYLES */
 
 h4 {color: #fcfcfc;}
 
@@ -396,17 +396,17 @@ figcaption {
   margin-top: 10px;
   font-size: 16px;}
 
-
+                                                                       /* RESPONSIVENESS FOR PHONE */
 
 
 @media (max-width: 768px) {
-   body {
+   body {                                                             /* GLOBAL STYLES */
     background-color: #07000c;
     font-size: 12px;
     padding: 0;
     margin: 0;}
 
-   header {
+   header {                                                           /* HEADER */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -425,9 +425,13 @@ figcaption {
    header nav a {
     font-size: 12px;
     padding: 6px 12px;}
+  
+   footer {                                                            /* FOOTER */
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 8px;}
 
-
-   .intro {
+   .intro {                                                            /* INTRO SECTION */
     padding: 80px 20px;
     background-size: cover;
     text-align: center;}
@@ -440,9 +444,8 @@ figcaption {
     width: 88px;
     height: 28px;
     font-size: 12px;}
- 
 
-   .container-info {
+   .container-info {                                                   /* INFO & VIDEO  */
     flex-direction: column;
     align-items: center;}
 
@@ -458,16 +461,11 @@ figcaption {
     font-size: 12px;
     line-height: 1.4;}
 
-   .video-main {max-width: 100%;}
+   .video-main {max-width: 100%;}                                       /* VIDEO */
 
    .video-main figcaption {font-size: 10px;}
 
-   footer {
-    font-size: 10px;
-    margin-top: 20px;
-    padding: 8px;}
-
-
+                                                                       /* CONTENT PAGE */  
    .celestial {
     font-size: 12px;
     padding: 4px;
@@ -483,7 +481,7 @@ figcaption {
     font-size: 12px;
     line-height: 1.4;}
 
-   .planets {
+   .planets {                                                          /* TABLE */
     padding: 10px;
     margin: 10px auto;
     max-width: 74%;}
@@ -492,7 +490,7 @@ figcaption {
     font-size: 12px;
     padding: 6px;}
 
-   .list-title h3 {
+   .list-title h3 {                                                     /* LIST */
     font-size: 14px;}
 
    .list-title p {
@@ -516,21 +514,22 @@ figcaption {
     font-size: 12px;
     padding: 6px;}
 
-   .image-list img {
+   .image-list img {                                                     /* IMAGE */
     width: 100%;
     height: auto;
     padding-bottom: 10px;}
 
    .image-list figure {margin-bottom: 0;}
 
-   .video-content video {
+   .video-content video {                                                /* VIDEO */
     max-width: 100%;
     height: auto;}
 
    .video-content figcaption {font-size: 10px;}
 
+                                                                        /* CONTACT PAGE */
 
-   .form-wrapper {
+   .form-wrapper {                                                      /* FORM */
     font-size: 12px;
     padding: 4px;
     min-height: unset;
@@ -571,7 +570,7 @@ figcaption {
     height: 40px;
     font-size: 14px;}
 
-   .contact-title h3 {font-size: 14px;}
+   .contact-title h3 {font-size: 14px;}                                   /* CONTACT INFO */
 
    .contact-title p {
     font-size: 12px;
@@ -601,7 +600,7 @@ figcaption {
 
    .contact-item h4,.contact-item p{font-size: 12px;}
 
-   .map {
+   .map {                                                                  /* MAP */
     width: 100%;
     min-width: auto;
     border-radius: 20px;
@@ -611,7 +610,7 @@ figcaption {
     width: 100%;
     height: auto;}
 
-   .hours {padding: 10px;}
+   .hours {padding: 10px;}                                               /* HOURS TABLE */
 
    .hours table {
     width: 100%;
