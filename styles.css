@@ -29,7 +29,7 @@ header nav a {
 
 nav a:hover {background-color: #64129f;}
   
-.intro {                                                 /* INTRO SECTION */
+.intro {                                               /* INTRO SECTION */
   text-align: center;
   padding: 220px;
   background-image: url(galaxy-intro.jpg);
@@ -130,7 +130,7 @@ footer {                                                       /* FOOTER */
 
 .planets td {color: #d7c7dc;}
 
-.list-title h3 {                                                /* TITLE */
+.list-title h3 {                                                /* TITLE LIST */
   font-size: 20px;
   text-align: center;}
 
@@ -159,6 +159,15 @@ footer {                                                       /* FOOTER */
   border-radius: 10px;
   flex-grow: 1;}
 
+.star-list {list-style: none;}                                          /* STAR ICON */
+
+.star-list li {margin: 6px 0;}
+
+.star-list i {
+  font-size: 14px;
+  margin-right: 8px;
+  color: #cc6eff;}
+
 .image-list {                                                          /* IMAGE */
   flex: 1;
   display: flex;
@@ -170,35 +179,10 @@ footer {                                                       /* FOOTER */
   width: 520px;
   border-radius: 10px;}
 
-.star-list {list-style: none;}                                          /* STAR ICON */
-
-.star-list li {margin: 6px 0;}
-
-.star-list i {
-  font-size: 14px;
-  margin-right: 8px;
-  color: #cc6eff;}
-
 .video-content {                                                         /* VIDEO */            
   text-align: center;
   padding: 20px;}
 
-#result{                                                                /* JAVASCRIPT RESULT */
-  display: none;
-  flex-direction: column;
-  border: 2px solid #190c23;
-  border-radius: 10px;
-  background-color: #0c0014;
-  width: 90%;
-  max-width: 400px;
-  min-height: 80px;
-  font-size: 14px;
-  line-height: 0.4;
-  padding: 6px 18px;
-  margin: 4px auto;
-  text-align: left;
-  align-items: flex-start;}
-  
                                                                         /* CONTACT PAGE */
 
 .container-form h2, .container-form p {text-align: center;}             /* FORM */
@@ -254,6 +238,22 @@ footer {                                                       /* FOOTER */
   cursor: pointer;
   padding: 8px;}
 
+#result{                                                                /* JAVASCRIPT RESULT */
+  display: none;
+  flex-direction: column;
+  border: 2px solid #190c23;
+  border-radius: 10px;
+  background-color: #0c0014;
+  width: 90%;
+  max-width: 400px;
+  min-height: 80px;
+  font-size: 14px;
+  line-height: 0.4;
+  padding: 6px 18px;
+  margin: 4px auto;
+  text-align: left;
+  align-items: flex-start;}
+
 .contact-title {                                                        /* CONTACT INFO */
   padding: 40px;
   padding-bottom: 20px;}
@@ -268,10 +268,17 @@ footer {                                                       /* FOOTER */
 
 .contacts-inside {
   display: flex;
+  justify-content: center;
+  flex: 1;
+  min-width: 100px;
+  display: flex;
   flex-direction: column;
-  gap: 1px;}
+  gap: 1px;
+list-style: none;}
 
-.contact-item a:hover {color: #9810fa;}
+.contact-item a:hover {
+  color: #9810fa;
+  text-decoration: underline;}
 
 .contact-item {
   display: flex;
@@ -302,8 +309,6 @@ footer {                                                       /* FOOTER */
   color: #d7c7dc;
   text-decoration: none;}
 
-.contact-item a:hover {text-decoration: underline;}
-
 .map {                                                                  /* MAP */
   flex: 0.8;
   min-width: 150px;
@@ -332,14 +337,6 @@ footer {                                                       /* FOOTER */
   background-color: #0c0014;
   width: 1000px;}
 
-.contacts-inside {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  min-width: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 1px;}
 
 .hours hr {                                                            /* HOURS */
   border: none;
@@ -359,13 +356,6 @@ footer {                                                       /* FOOTER */
 .hours table {margin: 0 auto;}
 
 .hours td {padding: 8px 20px;}
-
-.contact-inside {list-style: none;}
-
-.contacs-inside i {
-  font-size: 12px;
-  margin-right: 6px;
-  color: #fcfcfc;}
 
                                                                        /* GLOBAL STYLES */
 
